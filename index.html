@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="case">
+        <img src="./assets/boom-1.jpg" loading="lazy">
+        <img src="./assets/boom-2.jpg" loading="lazy">
+        <img src="./assets/boom-3.jpg" loading="lazy">
+        <img src="./assets/boom-4.jpg" loading="lazy">
+        <img src="./assets/boom-5.jpg" loading="lazy">
+        <img src="./assets/boom-6.jpg" loading="lazy">
+        <img src="./assets/boom-7.jpg" loading="lazy">
+        <div class="vimeo" data-src="https://player.vimeo.com/video/740707833?h=07c8a28b46"></div>
+        <img src="./assets/boom-9.jpg" loading="lazy">
+        <img src="./assets/boom-10.jpg" loading="lazy">
+        <img src="./assets/boom-11.gif" loading="lazy">
+        <img src="./assets/boom-12.jpg" loading="lazy">
+      </section>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+      document.querySelectorAll(".vimeo").forEach(el => {
+        if(el.dataset.src) {
+           new Vimeo.Player(el, {
+            url: "https://player.vimeo.com/video/740707833?h=07c8a28b46",
+            width: el.offsetWidth,
+            autoplay: true,
+            autopasue: false,
+            badge: false,
+            loop: true
+          })
+        }
+      })
+
+      document.querySelectorAll(".case img").click(() => {
+
+      })
+    </script>
+  </body>
+</html>
