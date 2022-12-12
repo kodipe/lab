@@ -20,6 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   } else {
     // Possibly fall back to event handlers here
-    console.log("TEST2");
+
   }
 });

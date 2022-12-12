@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <link href="./style.css?v=1.0.2" rel="stylesheet">
+    <link href="./style.css?v=1.0.3" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOOM - Case study</title>
   </head>
@@ -27,7 +27,7 @@
       document.querySelectorAll(".vimeo").forEach(el => {
         if(el.dataset.src) {
            new Vimeo.Player(el, {
-            url: "https://player.vimeo.com/video/740707833?h=07c8a28b46",
+            url: el.dataset.src,
             width: el.offsetWidth,
             autoplay: true,
             autopasue: false,
@@ -37,6 +37,6 @@
         }
       })
     </script>
-    <script src="./app.js?v=1.0.2"></script>
+    <script src="./app.js?v=1.0.3"></script>
   </body>
 </html>
