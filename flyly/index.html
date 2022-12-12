@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="./style.css?v=1.0.3" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOM - Case study</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="case">
+        <img class="lazy" data-src="./assets/boom-1.jpg" width="2800" height="5470">
+        <img class="lazy" data-src="./assets/boom-2.jpg" width="2800" height="3760">
+        <img class="lazy" data-src="./assets/boom-3.jpg" width="2800" height="4912">
+        <img class="lazy" data-src="./assets/boom-4.jpg" width="2800" height="4646">
+        <img class="lazy" data-src="./assets/boom-5.jpg" width="2800" height="3260">
+        <img class="lazy" data-src="./assets/boom-6.jpg" width="2800" height="4076">
+        <img class="lazy" data-src="./assets/boom-7.jpg" width="2800" height="5962">
+        <div class="vimeo" data-src="https://player.vimeo.com/video/740707833?h=07c8a28b46"></div>
+        <img class="lazy" data-src="./assets/boom-9.jpg" width="2800" height="6052">
+        <img class="lazy" data-src="./assets/boom-10.jpg" width="2800" height="5198">
+        <img class="lazy" data-src="./assets/boom-11.gif" width="2800" height="1466">
+        <img class="lazy" data-src="./assets/boom-12.jpg" width="2800" height="5538">
+      </section>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+      document.querySelectorAll(".vimeo").forEach(el => {
+        if(el.dataset.src) {
+           new Vimeo.Player(el, {
+            url: el.dataset.src,
+            width: el.offsetWidth,
+            autoplay: true,
+            autopasue: false,
+            badge: false,
+            loop: true
+          })
+        }
+      })
+    </script>
+    <script src="./app.js?v=1.0.3"></script>
+  </body>
+</html>
