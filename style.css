@@ -36,6 +36,11 @@ body {
   display:  block;
   width:  100%;
   height:  auto;
+  background: url("./lazy.gif");
+  background-repeat: no-repeat;
+  background-size: 256px 256px;
+  background-position: center;
+  border:  none;
 }
 
 .case iframe {
