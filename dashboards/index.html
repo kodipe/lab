@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="./style.css?v=1.0.3" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboards - Case study</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="case">
+        <img class="lazy" data-src="./assets/dashboards-1.png" width="2880" height="4998">
+        <img class="lazy" data-src="./assets/dashboards-2.png" width="2880" height="3498">
+        <img class="lazy" data-src="./assets/dashboards-3.png" width="2880" height="5314">
+        <img class="lazy" data-src="./assets/dashboards-4.png" width="2880" height="5246">
+        <img class="lazy" data-src="./assets/dashboards-5.png" width="2880" height="3902">
+        <img class="lazy" data-src="./assets/dashboards-6.png" width="2880" height="4614">
+      </section>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+      document.querySelectorAll(".vimeo").forEach(el => {
+        if(el.dataset.src) {
+           new Vimeo.Player(el, {
+            url: el.dataset.src,
+            width: el.offsetWidth,
+            autoplay: true,
+            autopasue: false,
+            badge: false,
+            loop: true
+          })
+        }
+      })
+    </script>
+    <script src="./app.js?v=1.0.3"></script>
+  </body>
+</html>
