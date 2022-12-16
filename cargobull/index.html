@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="./style.css?v=1.0.3" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyly - Case study</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="case">
+        <div class="vimeo" data-src="https://vimeo.com/392928728">
+      </section>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+      document.querySelectorAll(".vimeo").forEach(el => {
+        if(el.dataset.src) {
+           new Vimeo.Player(el, {
+            url: el.dataset.src,
+            width: el.offsetWidth,
+            autoplay: true,
+            autopasue: false,
+            badge: false,
+            loop: true
+          })
+        }
+      })
+    </script>
+    <script src="./app.js?v=1.0.3"></script>
+  </body>
+</html>

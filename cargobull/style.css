@@ -1,0 +1,49 @@
+* {
+  box-sizing:  border-box;
+}
+
+body {
+  margin:  0;
+  padding:  0;
+  background:  #EEEEEE;
+}
+
+.wrap {
+  padding:  0;
+  margin:  0 auto;
+}
+
+@media (min-width:  1024px) {
+  .wrap {
+    padding:  64px;
+  }
+}
+
+.case {
+  padding:  0px;
+  max-width:  100%;
+}
+
+@media (min-width: 1024px) {
+  .case {
+    margin:  0 auto;
+    width: 1400px;
+    max-width:  100%;
+  }
+}
+
+.case img {
+  display:  block;
+  width:  100%;
+  height:  auto;
+  background: #FFFFFF url("./lazy.gif");
+  background-repeat: no-repeat;
+  background-size: 128px 128px;
+  background-position: center;
+  border:  none;
+}
+
+.case iframe {
+  display:  block;
+  width:  100%;
+}
